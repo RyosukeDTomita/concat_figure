@@ -15,8 +15,8 @@ def parse_args() -> dict:
                         type=str)
     parser.add_argument("-s", "--save", help="save file name.",
                         type=str)
-    parser.add_argument("-r", "--rpath", help="csvfile use relative path.",
+    parser.add_argument("-p", "--path", help="csvfile express figure path.",
             action="store_true")
     p = parser.parse_args()
-    args = {"file": p.file, "save": p.save, "rpath": p.rpath}
+    args = {"file": p.file, "save": p.save, "path": p.path}
     return args

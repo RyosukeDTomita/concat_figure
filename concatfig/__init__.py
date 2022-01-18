@@ -7,7 +7,7 @@ def main():
     args = parse_args()
 
     concat_fig = concatfig.ConcatFig(args["file"],
-            use_rpath=args["rpath"])
+            use_path=args["path"])
     cated_fig = concat_fig.cat_all()
 
     if args["save"] == None:

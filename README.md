@@ -19,9 +19,11 @@ This program can concat figures by order which csvfile order.
 - figures are saved the directory which saved `csvfile`.
 - `csvfile` express the order of figures.
 - if `--save`is not set, default output name is `concat.png`.
+- -p: csvfile contents expressed figure path.
 
 ```shell
 python3 concat_fig.py --file ./tryme/sample.csv --save <save file name>
+python3 concat_fig.py --file ./tryme/sample.csv --save <save file name> -p
 ```
 
 # INSTALATION
