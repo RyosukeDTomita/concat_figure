@@ -1,12 +1,12 @@
 # coding: utf-8
-from concatfig import concatfig
+from concatfig import ConcatFig
 from .options import parse_args
 
 
 def main():
     args = parse_args()
 
-    concat_fig = concatfig.ConcatFig(args["file"],
+    concat_fig = ConcatFig.ConcatFig(args["file"],
             use_path=args["path"])
     cated_fig = concat_fig.cat_all()
 

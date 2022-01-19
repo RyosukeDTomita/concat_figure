@@ -1,8 +1,8 @@
 README.md
 setup.py
+concatfig/ConcatFig.py
 concatfig/__init__.py
 concatfig/__main__.py
-concatfig/concatfig.py
 concatfig/hvcat.py
 concatfig/options.py
 concatfig.egg-info/PKG-INFO

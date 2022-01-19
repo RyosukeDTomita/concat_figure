@@ -11,6 +11,7 @@ class ConcatFig:
     """ConcatFig.
     """
     csvfile: str
+    use_path: bool = False
 
     def __post_init__(self):
         """__post_init__.
@@ -20,7 +21,10 @@ class ConcatFig:
         self.df_v_len = len(self.df.values)
 
     def to_abs_path(self, fig_path: str):
-        return join(abspath(dirname(self.csvfile)), fig_path)
+        if self.use_path:
+            return fig_path
+        else:
+            return join(abspath(dirname(self.csvfile)), fig_path)
 
     def cat_all(self) -> Image.Image:
         """cat_all.
