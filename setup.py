@@ -6,7 +6,7 @@ from setuptools import find_packages
 def main():
     setup(
         name="concatfig",
-        version="1.0.0",
+        version="1.0.2",
         description='concat figure by csvfile order.',
         author="Ryosuke Tomita",
         packages=find_packages(),

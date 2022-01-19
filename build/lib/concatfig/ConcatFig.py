@@ -50,7 +50,12 @@ class ConcatFig:
                     img_right = Image.open(self.to_abs_path(self.df[h+1][v]))
                     img_left = cat_horizontal(img_right, img_left)
             cated_h_figs.append(img_left)
+
         # concat figures created by cat_horizontal() vertically.
+        if self.df_v_len == 1:
+            cated_fig = cated_h_figs[0]
+            return cated_fig
+
         for v in range(len(cated_h_figs)):
 
             if v == len(cated_h_figs) -1:
